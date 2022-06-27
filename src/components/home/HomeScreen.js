@@ -1,12 +1,17 @@
 import React from 'react';
+import { FooterScreen } from '../footer/FooterScreen';
 import { HeaderScreen } from '../header/HeaderScreen';
-import { Nabvar } from '../nabvar/Nabvar'
+import { OfertasScreen } from '../ofertas/OfertasScreen';
+import { Suscripcion } from '../suscripcion/Suscripcion';
 
 export const HomeScreen = () => {
     return (
         <>
-            <Nabvar />
             <HeaderScreen />
+            <OfertasScreen />
+            <Suscripcion />
+            <hr />
+            <FooterScreen />
         </>
     )
 }

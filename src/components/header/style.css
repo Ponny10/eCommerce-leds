@@ -1,4 +1,38 @@
-.header__corousel{
+.carousel-item {
+    background-color: red;
+    height: 42vh;
+
+}
+
+.fondos {
+    align-items: center;
     width: 100%;
-    height: 25% !important;
+    height: 100%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .carousel-item {
+        height: 85vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 86.5vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        align-items: center;
+        height: 60vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item {
+        align-items: center;
+        height: 94vh;
+    }
 }
