@@ -47,13 +47,13 @@ export const CategoriaScreen = (props) => {
         <>
             {
                 titulo ?
-                    <div className='bg-warning p-3 text-center my-3'>
+                    <div className='bg-warning p-3 text-center my-5'>
                         <h2>{ titulo + id_oferta }</h2>
                     </div>
                     :
                     null
             }
-            <div div className='row'>
+            <div className='row'>
                 {
                     productos.map((res, index) => (
                         <CategoriasProd { ...res } key={ index } />

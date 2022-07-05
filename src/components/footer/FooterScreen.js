@@ -36,8 +36,8 @@ export const FooterScreen = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-center py-3">© 2020 Copyright:
-                    <a href="/"> MDBootstrap.com</a>
+                <div className="text-center py-4">© 2022 Copyright:
+                    <a href="/"> SM Auto Leds</a>
                 </div>
             </footer>
         </div>

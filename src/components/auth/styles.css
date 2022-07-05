@@ -1,0 +1,19 @@
+.bg-login {
+    background-color: #e9ecef;
+}
+
+.l-login {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.title-login {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 2rem 0 2rem;
+}
+
+.cascading-right {
+    background: hsla(0, 0%, 100%, 0.55) !important;
+    backdrop-filter: blur(30px) !important;
+}

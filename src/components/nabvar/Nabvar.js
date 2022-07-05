@@ -1,10 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.jpeg';
 
 export const Nabvar = () => {
+    const { uid, uidAdmin } = useSelector(state => state.auth);
     return (
         <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <div className="container">
@@ -40,23 +42,35 @@ export const Nabvar = () => {
                         <NavLink
                             activeclassname='activate'
                             className='nav-item nav-link h4'
-                            to='/acercade'
+                            to='/contacto'
                         >
-                            Acerca de
+                            Contacto
+                        </NavLink>
+                        {
+                            (uid === uidAdmin) ?
+                                <NavLink
+                                    activeclassname='activate'
+                                    className='nav-item nav-link h4'
+                                    to='/contacto'
+                                >
+                                    Admin
+                                </NavLink>
+                                :
+                                null
+                        }
+                        <NavLink
+                            activeclassname='activate'
+                            className='nav-item nav-link h4'
+                            to='/mycar'
+                        >
+                            <FontAwesomeIcon icon={ faCartShopping } style={ { color: 'red', height: 24 } } />
                         </NavLink>
                         <NavLink
                             activeclassname='activate'
                             className='nav-item nav-link h4'
-                            to='/login'
+                            to='/profile'
                         >
-                            <FontAwesomeIcon icon={ faUser } style={ { color: 'blue', height: 24 } } />
-                        </NavLink>
-                        <NavLink
-                            activeclassname='activate'
-                            className='nav-item nav-link h4'
-                            to='/car'
-                        >
-                            <FontAwesomeIcon icon={ faCartShopping } style={ { color: 'blue', height: 24 } } />
+                            <FontAwesomeIcon icon={ faUser } style={ { color: '#2767F5', height: 24 } } />
                         </NavLink>
                     </ul>
                 </div>
